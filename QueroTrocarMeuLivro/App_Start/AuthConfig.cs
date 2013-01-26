@@ -22,9 +22,9 @@ namespace QueroTrocarMeuLivro
             //    consumerKey: "",
             //    consumerSecret: "");
 
-            //OAuthWebSecurity.RegisterFacebookClient(
-            //    appId: "",
-            //    appSecret: "");
+            OAuthWebSecurity.RegisterFacebookClient(
+                appId: "204359383041367",
+                appSecret: "01776752e833c4ef9231ec82a8b73a7b");
 
             //OAuthWebSecurity.RegisterGoogleClient();
         }

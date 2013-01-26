@@ -8,16 +8,6 @@ using System.Web.Security;
 
 namespace QueroTrocarMeuLivro.Models
 {
-    public class UsersContext : DbContext
-    {
-        public UsersContext()
-            : base("DefaultConnection")
-        {
-        }
-
-        public DbSet<UserProfile> UserProfiles { get; set; }
-    }
-
     [Table("UserProfile")]
     public class UserProfile
     {
@@ -25,6 +15,10 @@ namespace QueroTrocarMeuLivro.Models
         [DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
         public int UserId { get; set; }
         public string UserName { get; set; }
+        public string Mobile { get; set; }
+        public string Cidade { get; set; }
+        public string Estado { get; set; }
+        public string Pais { get; set; }
     }
 
     public class RegisterExternalLoginModel
