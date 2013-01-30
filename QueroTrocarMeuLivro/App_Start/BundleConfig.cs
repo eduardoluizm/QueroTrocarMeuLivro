@@ -23,7 +23,12 @@ namespace QueroTrocarMeuLivro
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
+            bundles.Add(new ScriptBundle("~/bundles/admin").Include(
+                        "~/Scripts/admin.js"));
+
             bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/site.css"));
+
+            bundles.Add(new StyleBundle("~/Content/admin").Include("~/Content/admin.css", "~/Content/admin.grey.css"));
 
             bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(
                         "~/Content/themes/base/jquery.ui.core.css",
